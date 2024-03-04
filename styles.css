@@ -125,10 +125,6 @@
         padding: 1rem;
     }
 
-    body {
-      line-height: 0;
-    }
-
     .form-group {
         max-width: 100%;
         margin:auto;
@@ -163,10 +159,6 @@
       padding: .2rem .5rem
       
   }
-
-    body {
-      line-height: 0;
-    }
 
     label {
       margin :0;
