@@ -1,0 +1,134 @@
+<!DOCTYPE   html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="survey.com, survey"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>survay form</title>
+    <link rel="icon" type="image/manga-icon" href="./favicon.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="form-box">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"> It's a survey from lookism manga</p>
+      </header>
+      <form id="survey-form" action="https://api.web3forms.com/submit" method="POST">
+        <input required type="hidden" name="access_key" value="2c393646-030a-46e1-8882-9bd7b494069b">
+
+        <div class="form-group">
+          <label for="name" id="name-label">Name : </label>
+          <input required id="name" name="Name" placeholder="Full Name" type="text" required/>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">E-mail : </label>
+          <input required  name="Email"id="email" placeholder="E-mail" type="email" required/>
+        </div>
+        <div>
+          <label for="number" id="number-label">Age (optional) : </label>
+          <input required name="Age" id="number" placeholder="Age" type="number" min="16" max="100"/>
+        </div>
+        <div class="form-group">
+          <label for="dropdown">How did you heard about this Manga? </label>
+          <select name="How did you heard about this Manga?" id="dropdown">
+            <option name="(Select one)">(Select one)</option>
+            <option name="YouTube Shorts">YouTube Shorts</option>
+            <option name="Instagram Reels">Instagram Reels</option>
+            <option name="TicTok">TicTok</option>
+            <option name="Manga Website">Manga Website</option>
+            <option name="Friends/family">Friends/Family</option>
+          </select>
+        </div>
+        <div class="form-group">
+           <label for="dropdown">what do you think about this manga, how is this? </label>
+          <select name="what do you think about this manga, how is this?" id="dropdown">
+            <option name="Good">Good</option>
+            <option name="Fantastic">Fantastic</option>
+            <option name="Like Goosebumps">Like Goosebumps</option>
+          </select>
+        </div>
+        <div class="form-group">
+           <label for="dropdown">Which character describe you best in this Lookism Manga? </label>
+          <select name="Which character describe you best in this Lookism Manga?" id="dropdown">
+            <option name="(Select one)">(Select one)</option>
+            <option name="Park Hyeong Suk/Daniel Park (MC)">Park Hyeong Suk/Daniel Park (MC)</option>
+            <option name="Lee Tae Sung/Logan Lee">Lee Tae Sung/Logan Lee</option>
+            <option name="Lee Eun Tae/Vasco">Lee Eun Tae/Vasco</option>
+            <option name="Park Bum Jae/jace park">Park Bum Jae/jace park</option>
+            <option name="hong jae yeol/jay hong">hong jae yeol/jay hong</option>
+            <option name="Lee jin sung/zack lee">Lee jin sung/zack lee</option>
+            <option name="kim mi jin/mira kim">kim mi jin/mira kim</option>
+            <option name="Jichang kwak">Jichang kwak</option>
+            <option name="Seokdu wang">Seokdu wang</option>
+            <option name="Manager Kim">Manager Kim</option>
+            <option name="Charles Choi">Charles Choi</option>
+            <option name="Tom lee">Tom lee</option>
+            <option name="Goo kim">Goo kim</option>
+            <option name="Gun park">Gun park</option>
+            <option name="james lee">james lee</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Would you like to recommed this manga to your friend? </label>
+          
+          
+          <div class="flex">
+            <div><input name="Would you like to recommed this manga to your friend?" value="Yaa! why not?" id="yaa" required type="radio" class="ra-ch" value=""/>
+          </div>
+          <div><label for="yaa">Yaa! why not?</label></div>
+          </div>
+          <div class="flex">
+            <div><input name="Would you like to recommed this manga to your friend?" value="Of Course , man!" id="of_" required type="radio" class="ra-ch" value=""/>
+          </div>
+          <div><label for="of_">Of Course , man!</label></div>
+          </div>
+          <div class="flex">
+            <div><input name="Would you like to recommed this manga to your friend?" value="Nope! I don't want to share this epic manga" id="no" required type="radio" class="ra-ch" value=""/>
+          </div>
+          <div><label for="no">Nope! I don't want to share this epic manga</label></div>
+          </div>
+        <div class="form-group">
+          <p>Ok now, How about you rate this fantastic manga?</p>
+
+          <div class="flex">
+            <div><input id="star" name="Ok now, How about you rate this fantastic manga?" value="⭐ (😣)" class="ra-ch" type="checkbox"/>
+          </div>
+          <div><label for="1_star">⭐ (😣)</label></div>
+          </div>
+          <div class="flex">
+            <div><input name="Ok now, How about you rate this fantastic manga" value="⭐⭐ (🥺)" class="ra-ch" type="checkbox"/>
+          </div>
+          <div><label for="2_star">⭐⭐ (🥺)</label></div>
+          </div>
+          <div class="flex">
+            <div><input name="Ok now, How about you rate this fantastic manga" value="⭐⭐⭐ (🙂)" class="ra-ch" type="checkbox"/>
+          </div>
+          <div><label for="3_star">⭐⭐⭐ (🙂)</label></div>
+          </div>
+          <div class="flex">
+            <div><input name="Ok now, How about you rate this fantastic manga" value="⭐⭐⭐⭐ (🥰)" class="ra-ch" type="checkbox"/>
+          </div>
+          <div><label for="4_star">⭐⭐⭐⭐ (🥰)</label></div>
+          </div>
+          <div class="flex">
+            <div><input name="Ok now, How about you rate this fantastic manga" value="⭐⭐⭐⭐⭐ (🤩)" class="ra-ch" type="checkbox"/>
+          </div>
+          <div><label for="5_star">⭐⭐⭐⭐⭐ (🤩)</label></div>
+          </div>
+          
+        </div>
+        <div class="form-group">
+      <p>Any things you want to say about this manga </p>
+      <textarea cols="30" rows="10" placeholder="Share your experience about this Lookism manga" name="Message"></textarea>
+    </div>
+    <div class="form-group">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+      </form>
+    </div>
+  </body>
+  </html>
