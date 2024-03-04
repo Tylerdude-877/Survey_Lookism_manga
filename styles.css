@@ -192,10 +192,6 @@
         max-width: 97%;;
     }
 
-    body {
-      line-height: 0;
-    }
-
     .form-group {
         max-width: 100%;
         margin:auto;
