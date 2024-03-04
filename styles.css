@@ -119,15 +119,137 @@
     height: 1.5rem;
   }
   
-  @media (max-width: 780px) {
-    html {
-      font-size: .6rem;
+    @media (max-width: 700px) {
+
+    .form-box {
+        max-width: 87%;;
+        padding: 1rem;
+    }
+
+    body {
+      line-height: 0;
+    }
+
+    .form-group {
+        max-width: 100%;
+        margin:auto;
+    }
+
+    input,label,#name, #email, #number,#dropdown{
+        max-width: 100%; 
+        font-size: .8rem;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+    #description{
+        font-size: 1rem;
+    }
+
+    ::placeholder {
+      font-size: .8rem;
     }
   }
+    
+  
   @media (max-width: 519px) {
-    html {
-      font-size: .3rem;
+
+    .form-box {
+        max-width: 97%;;
+        padding: 1rem;
     }
+
+    select,#name, #email, #number,#dropdown,#number-label{
+      padding: .2rem .5rem
+      
+  }
+
+    body {
+      line-height: 0;
+    }
+
+    label {
+      margin :0;
+    }
+
+    .form-group {
+        max-width: 100%;
+        margin:auto;
+    }
+
+    input,label,#name, #email, #number,#dropdown{
+        max-width: 100%; 
+        font-size: .8rem;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+    #description{
+        font-size: 1rem;
+    }
+
+    ::placeholder,p {
+      font-size: .8rem;
+    }
+  }
+
+  @media (max-width: 300px) {
+
+    .form-box {
+        max-width: 97%;;
+    }
+
+    body {
+      line-height: 0;
+    }
+
+    .form-group {
+        max-width: 100%;
+        margin:auto;
+    }
+
+
+
+    input,label,#name, #email, #number,#dropdown{
+        max-width: 100%; 
+        font-size: .5rem;
+
+    }
+
+    #title {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    #description{
+        font-size: .5rem;
+    }
+
+    .flex {
+      gap: .3rem;
+      
+    }
+
+    .ra-ch {
+      margin-top: .85rem;
+      width: .5rem;
+      height: .5rem;
+    }
+
+    label {
+      font-size: .4rem;
+      margin: 0;
+    }
+
+    ::placeholder {
+      font-size: .4rem;
+    }
+
+    select,#name, #email, #number,#dropdown,#number-label{
+      padding: .2rem .5rem
+
+  }
   }
   
   
